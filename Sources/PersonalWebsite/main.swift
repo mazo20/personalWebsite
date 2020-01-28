@@ -15,11 +15,11 @@ struct PersonalWebsite: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
-    var name = "PersonalWebsite"
+    var name = "Maciej Kowalski"
     var description = "A description of PersonalWebsite"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try PersonalWebsite().publish(withTheme: .foundation)
+try PersonalWebsite().publish(withTheme: .foundation, additionalSteps: [.deploy(using: .gitHub("mazo20/mazo20.github.io"))])
