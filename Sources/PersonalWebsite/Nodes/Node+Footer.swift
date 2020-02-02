@@ -23,14 +23,14 @@ extension Node where Context == HTML.BodyContext {
                     .href("https://github.com/johnsundell/publish")
                 ),
                 .text(". Written in Swift.")
-            ),
-            .div(
-                .class("pure-u-1"),
-                .a(
-                    .text("RSS feed"),
-                    .href("/feed.rss")
-                )
             )
+//            .div(
+//                .class("pure-u-1"),
+//                .a(
+//                    .text("RSS feed"),
+//                    .href("/feed.rss")
+//                )
+//            )
         )
     }
 }

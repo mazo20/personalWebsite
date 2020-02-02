@@ -21,7 +21,7 @@ struct Blog: Website {
     }
 
     var url = URL(string: "https://mkowalski.me")!
-    var title = "mkowalski.me"
+    var title = "Maciej Kowalski"
     var name = "Maciej Kowalski"
     var description = "Computer science student with deep experience in mobile development."
     var language: Language { .english }

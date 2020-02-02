@@ -27,7 +27,9 @@ extension Node where Context == HTML.BodyContext {
                     .h3(
                         .class("brand-tagline"),
                         .text(site.description)
-                    )
+                    ),
+                    .p(),
+                    .h3("maciej dot mateusz dot kowalski at gmail dot com")
                 )
             )
         )

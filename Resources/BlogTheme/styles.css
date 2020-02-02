@@ -8,7 +8,7 @@
 
 body {
     background: #fff;
-    color: #000;
+    color: #333;
     font-family: Helvetica, Arial;
     text-align: center;
 }
@@ -23,8 +23,9 @@ body {
 }
 
 header {
-    background-color: #eee;
+    background-color: #3F96CC;
     position: fixed;
+    
 }
 
 header .wrapper {
@@ -35,12 +36,12 @@ header .wrapper {
 
 header a {
     text-decoration: none;
+    color: #fff;
 }
 
 header .site-name {
-    font-size: 1.5em;
-    color: #000;
-    font-weight: bold;
+    
+    color: #fff;
 }
 
 nav {
@@ -123,7 +124,7 @@ a {
 }
 
 .content {
-    max-width: 64em;
+    max-width: 60em;
     padding: 30px;
     text-align: left;
 }
@@ -172,7 +173,7 @@ a {
 }
 .brand-tagline {
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.8);
+    
 }
 
 .sidebar {

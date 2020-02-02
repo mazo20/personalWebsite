@@ -8,17 +8,15 @@ tags: CV, Web
 
 ## Mobile Developer at Nagne Studio
 
-*2019 - present*
+*2019 - present, Edinburgh, United Kingdom*
 
-Joined a two-person team to work on the development of mobile apps for client projects using Flutter. I am doing a full-stack development using Firebase as the backend. My work has included the following:
+Working remotely as a full-stack developer, developing  from start to finish feature-rich mobile apps in Flutter, with Firebase as a back-end service.
 
-- Creating the frontend using provided design.  
-- Creating data model according to the provided specifications.  
-Creating a backend using Firebase and connecting to the app.  
-Connecting to 4 different CRMs: Salesforce, Zoho, Hubspot and Pipedrive by researching and then using their OAuth implementations.
-Retrieving and uploading data to a CRM using REST API.
-Using and fixing Flutter plugins to implement text-to-speech and speech-recognition.
-Working side by side with the client during the UAT.
+## Toronto Annotation Suite
+
+*2020, Toronto, Canada*
+
+Developing a mobile app for a research team in Toronto that takes advantage of their [Polygon-RNN++](http://www.cs.toronto.edu/polyrnn/) neural net.
 
 # Education
 
@@ -37,7 +35,7 @@ Scalable Computing, Parallel Programming, Machine Learning and Data Mining, Intr
 
 *2017 - 2021, Edinburgh, United Kingdom*
 
-Curently 1.1 with a weighted average of 80.
+Currently 1.1 with a weighted average of 80.
 
 ## III High School in Opole
 
@@ -64,23 +62,37 @@ Curently 1.1 with a weighted average of 80.
 </a>
 
 
-## Apps for Nagne Studio
+## Flutter apps for Nagne Studio
 
 *KuzaKash* [[Android](https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104)] - An app that connects to Youtube API to get live subscriber count that is updated every second for specified channel.
 
 *CallWallet* [[Android](https://play.google.com/store/apps/details?id=com.callwallet.app),  [iOS](https://apps.apple.com/jm/app/callwallet-making-crm-mobile/id1471343945)] -  An app that lets you visualize and compare the speed of algorithms like quicksort, heapsort, shell sort etc.
 
-## University projects
+## Other projects
 
-*r/place*
+**Static website build with Swift**
 
-*DVD cover efficient retrieval system*
+This website was build with Swift and generated into HTML with [Publish](https://github.com/johnsundell/publish). 100% JavaScript-free.
 
-*UrlShortener*
+**r/place**
 
-*Grammar checker*
+A copy of a famous [project](https://www.reddit.com/r/place/) on Reddit for my Scalable Computing class. Implemented in AWS using ECS Fargate containers, ElastiCache (Redis) and a load balancer for scalability.
 
-*Micro-Haskell language processing pipeline*
+**DVD cover efficient retrieval system**
+
+An app which takes an image of a DVD, finds key points using SIFT descriptors, retrieves similar covers from the database and returns the DVD cover with the best homography calculated using RANSAC.
+
+**UrlShortener**
+
+A distributed, fault-tolerant system working on multiple university machines using Bash scripts, Java servers and SQLite as storage.
+
+**Grammar checker**
+
+Written purely in machine code (MIPS) for Computer Systems class.
+
+**Micro-Haskell language processing pipeline**
+
+Lexer, parser and typechecker built in Java for a simplified Haskell language.
 
 # Other things about me
 
