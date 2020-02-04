@@ -26,5 +26,5 @@ struct Blog: Website {
     var description = "Computer science student with deep experience in mobile development."
     var language: Language { .english }
     var imagePath: Path? { nil }
-    var socialMediaLinks: [SocialMediaLink] { [.location, .email, .linkedIn, .github, .twitter] }
+    var socialMediaLinks: [SocialMediaLink] { [.email, .linkedIn, .github, .twitter] }
 }

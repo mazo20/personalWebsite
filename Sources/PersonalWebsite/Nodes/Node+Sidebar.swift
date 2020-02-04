@@ -29,7 +29,16 @@ extension Node where Context == HTML.BodyContext {
                         .text(site.description)
                     ),
                     .p(),
-                    .h3("maciej dot mateusz dot kowalski at gmail dot com")
+                    
+                    .div(
+                        .forEach(site.socialMediaLinks, { link in
+                            .a(
+                                .href(link.url),
+                                .class(link.icon)
+                            )
+                        })
+                    )
+                    
                 )
             )
         )

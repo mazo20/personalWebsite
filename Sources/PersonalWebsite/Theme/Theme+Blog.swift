@@ -31,6 +31,7 @@ struct BlogHTMLFactory: HTMLFactory {
                     ),
                     .footer(for: context.site)
                 )
+                
             )
         )
     }

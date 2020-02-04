@@ -14,43 +14,36 @@ struct SocialMediaLink {
 }
 
 extension SocialMediaLink {
-    static var location: SocialMediaLink {
-        return SocialMediaLink(
-            title: "Vilnius, Lithuania",
-            url: "https://en.wikipedia.org/wiki/Vilnius",
-            icon: "fas fa-map-marker-alt"
-        )
-    }
     
     static var linkedIn: SocialMediaLink {
         return SocialMediaLink(
             title: "LinkedIn",
-            url: "https://www.linkedin.com/in/povilas-staškus-6b10528b",
-            icon: "fab fa-linkedin"
+            url: "https://www.linkedin.com/in/maciej-kowalski-284165156/",
+            icon: "fa fa-linkedin"
         )
     }
     
     static var email: SocialMediaLink {
         return SocialMediaLink(
             title: "Email",
-            url: "mailto:povilas@staskus.io",
-            icon: "fas fa-envelope-open-text"
+            url: "mailto:maciej.mateusz.kowalski@gmail.com",
+            icon: "fa fa-envelope"
         )
     }
     
     static var github: SocialMediaLink {
         return SocialMediaLink(
             title: "GitHub",
-            url: "https://github.com/nitesuit",
-            icon: "fab fa-github-square"
+            url: "https://github.com/mazo20",
+            icon: "fa fa-github"
         )
     }
     
     static var twitter: SocialMediaLink {
         return SocialMediaLink(
             title: "Twitter",
-            url: "https://twitter.com/PovilasStaskus",
-            icon: "fab fa-twitter-square"
+            url: "https://twitter.com/Kowal_Maciej",
+            icon: "fa fa-twitter"
         )
     }
 }
