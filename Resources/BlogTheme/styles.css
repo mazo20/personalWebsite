@@ -10,38 +10,58 @@ body {
     background: #fff;
     color: #333;
     font-family: Helvetica, Arial;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    max-width: 64em;
 }
 
 
 .wrapper {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 40px;
     text-align: left;
 }
 
 header {
-    background-color: #3F96CC;
-    position: fixed;
-    
+    padding: 15px;
 }
 
-header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+header .header-layout {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+header li {
+    display: inline-block;
+}
+
+header ul {
+    list-style: none;
+    margin-top: auto;
 }
 
 header a {
     text-decoration: none;
-    color: #fff;
+    padding: 10px;
 }
 
-header .site-name {
-    
-    color: #fff;
+header .header-title {
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+header .header-section {
+    margin: 5px;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 2px;
 }
 
 nav {
@@ -124,8 +144,7 @@ a {
 }
 
 .content {
-    max-width: 60em;
-    padding: 30px;
+    padding: 20px;
     text-align: left;
 }
 
@@ -177,8 +196,7 @@ a {
 }
 
 .sidebar {
-    padding: 30px;
-    margin-top: 20px;
+    padding: 20px;
 }
 
 .sidebar .author-avatar {
@@ -196,22 +214,33 @@ a {
     margin: 5px;
 }
 
+.fa {
+    padding: 5px;
+    font-size: 27px;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+}
+
 
 @media(min-width: 64em) {
     .sidebar {
-        position: fixed;
-        padding-left: 40px;
+        padding-left: 5px;
         padding-right: 10px;
+        border-right: 1px solid #eee;
     }
     
     .content {
-        margin-left: 25%;
-        padding: 50px;
+        padding: 25px;
+    }
+    
+    header {
+        margin-bottom: 15px;
     }
     
     .sidebar .author-avatar {
         display: block;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -226,11 +255,5 @@ a {
     
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
+
 

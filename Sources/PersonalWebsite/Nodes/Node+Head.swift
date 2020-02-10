@@ -8,8 +8,15 @@ import Plot
 import Publish
 
 extension Node where Context == HTML.DocumentContext {
-    static func head(for site: Blog) -> Node {
+    static func head(for site: Blog, sectionTitle: String = "") -> Node {
+        var title = sectionTitle
+        if title.isEmpty {
+            title = site.name
+        } else {
+            title.append(" | " + site.name)
+        }
         return Node.head(
+            .title(title),
             .meta(
                 .charset(.utf8),
                 .name("viewport"),
@@ -31,7 +38,7 @@ extension Node where Context == HTML.DocumentContext {
             ),
             .link(
                 .rel(.stylesheet),
-                .href("BlogTheme/styles.css")
+                .href("/styles.css")
             )
             
         )

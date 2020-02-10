@@ -12,7 +12,10 @@ extension Theme where Site == Blog {
     /// The default "Foundation" theme that Publish ships with, a very
     /// basic theme mostly implemented for demonstration purposes.
     static var blog: Self {
-        Theme(htmlFactory: BlogHTMLFactory())
+        Theme(
+            htmlFactory: BlogHTMLFactory(),
+            resourcePaths: ["Resources/BlogTheme/styles.css"]
+        )
     }
 }
 
@@ -26,7 +29,7 @@ struct BlogHTMLFactory: HTMLFactory {
                 .grid(
                     .header(for: context.site),
                     .sidebar(for: context.site),
-                    .page(
+                    .sidebarPage(
                         .contentBody(index.body)
                     ),
                     .footer(for: context.site)
@@ -40,14 +43,27 @@ struct BlogHTMLFactory: HTMLFactory {
                          context: PublishingContext<Blog>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: section, on: context.site),
+            
+            .head(for: context.site, sectionTitle: section.description),
             .body(
-                .header(for: context, selectedSection: section.id),
-                .wrapper(
-                    .h1(.text(section.title)),
-                    .itemList(for: section.items, on: context.site)
-                ),
-                .footer(for: context.site)
+                .grid(
+                    .header(for: context.site),
+                    .if(section.id == .about,
+                        .div(
+                            .sidebar(for: context.site),
+                            .sidebarPage(
+                                .contentBody(section.body)
+                            )
+                        ),
+                        else:
+                        .page(
+                            .h1(.text(section.title)),
+                            .itemList(for: section.items, on: context.site)
+                        )
+                    ),
+                    
+                    .footer(for: context.site)
+                )
             )
         )
     }
@@ -56,19 +72,17 @@ struct BlogHTMLFactory: HTMLFactory {
                       context: PublishingContext<Blog>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: item, on: context.site),
+            .head(for: context.site),
             .body(
                 .class("item-page"),
-                .header(for: context, selectedSection: item.sectionID),
-                .wrapper(
-                    .article(
-                        .div(
-                            .class("content"),
-                            .contentBody(item.body)
-                        ),
-                        .span("Tagged with: "),
-                        .tagList(for: item, on: context.site)
-                    )
+                .header(for: context.site),
+                .article(
+                    .div(
+                        .class("content"),
+                        .contentBody(item.body)
+                    ),
+                    .span("Tagged with: "),
+                    .tagList(for: item, on: context.site)
                 ),
                 .footer(for: context.site)
             )
@@ -79,9 +93,9 @@ struct BlogHTMLFactory: HTMLFactory {
                       context: PublishingContext<Blog>) throws -> HTML {
         HTML(
             .lang(context.site.language),
-            .head(for: page, on: context.site),
+            .head(for: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
+                .header(for: context.site),
                 .wrapper(.contentBody(page.body)),
                 .footer(for: context.site)
             )
@@ -92,9 +106,9 @@ struct BlogHTMLFactory: HTMLFactory {
                          context: PublishingContext<Blog>) throws -> HTML? {
         HTML(
             .lang(context.site.language),
-            .head(for: page, on: context.site),
+            .head(for: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
+                .header(for: context.site),
                 .wrapper(
                     .h1("Browse all tags"),
                     .ul(
@@ -119,9 +133,9 @@ struct BlogHTMLFactory: HTMLFactory {
                             context: PublishingContext<Blog>) throws -> HTML? {
         HTML(
             .lang(context.site.language),
-            .head(for: page, on: context.site),
+            .head(for: context.site),
             .body(
-                .header(for: context, selectedSection: nil),
+                .header(for: context.site),
                 .wrapper(
                     .h1(
                         "Tagged with ",
@@ -148,31 +162,6 @@ struct BlogHTMLFactory: HTMLFactory {
 }
 
 private extension Node where Context == HTML.BodyContext {
-    
-
-    static func header<T: Website>(
-        for context: PublishingContext<T>,
-        selectedSection: T.SectionID?
-    ) -> Node {
-        let sectionIDs = T.SectionID.allCases
-
-        return .header(
-            .wrapper(
-                .a(.class("site-name"), .href("/"), .text(context.site.name))
-//                .if(sectionIDs.count > 1,
-//                    .nav(
-//                        .ul(.forEach(sectionIDs) { section in
-//                            .li(.a(
-//                                .class(section == selectedSection ? "selected" : ""),
-//                                .href(context.sections[section].path),
-//                                .text(context.sections[section].title)
-//                            ))
-//                        })
-//                    )
-//                )
-            )
-        )
-    }
 
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
         return .ul(

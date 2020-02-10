@@ -16,7 +16,7 @@ Working remotely as a full-stack developer, developing  from start to finish fea
 
 *2020, Toronto, Canada*
 
-Developing a mobile app for a research team in Toronto that takes advantage of their [Polygon-RNN++](http://www.cs.toronto.edu/polyrnn/) neural net.
+Developing a mobile app in React Native for a research team in Toronto that takes advantage of their state-of-the-art [Polygon-RNN++](http://www.cs.toronto.edu/polyrnn/) neural net for image segmentation.
 
 # Education
 
@@ -40,6 +40,12 @@ Currently 1.1 with a weighted average of 80.
 ## III High School in Opole
 
 *2014 - 2017, Opole, Poland*
+
+100th percentile in Extended Mathematics exam
+
+99th percentile in Extended Physics exam
+
+98th percintile in Extende Informatics exam 
 
 # Experience
 
@@ -80,7 +86,11 @@ A copy of a famous [project](https://www.reddit.com/r/place/) on Reddit for my S
 
 **DVD cover efficient retrieval system**
 
-An app which takes an image of a DVD, finds key points using SIFT descriptors, retrieves similar covers from the database and returns the DVD cover with the best homography calculated using RANSAC.
+A Python script which takes an image of a DVD, finds key points using SIFT descriptors, retrieves similar covers from the database using the Nister, Stewenius, [*"Scalable Recognition with a Vocabulary Tree"*](http://www-inst.eecs.berkeley.edu/~cs294-6/fa06/papers/nister_stewenius_cvpr2006.pdf), CVPR 2006 paper and returns the DVD cover with the best homography calculated using RANSAC.
+
+<img src="/images/retrievedImages.png" alt="The most similar images retieved from the database" style="width: 100%; max-width: 380px;"/>
+<img src="/images/bestImage.png" alt="The image with best homography" style="width: 100%; max-width: 380px;"/>
+
 
 **UrlShortener**
 
@@ -110,7 +120,7 @@ As a vice-president I was responsible for organising weekly Polish tutorials, so
 
 *2019*
 
-One of 100 Polish students chosen for a mentorship scheme. My mentor is Matt Komorowski, Senior Director & Head of Channel Partners - International Markets at PayPal.
+One of a 100 Polish students chosen for a mentorship scheme. My mentor was Matt Komorowski, Senior Director & Head of Channel Partners - International Markets at PayPal.
 
 **iOSDevUK student sponsorship**
 
