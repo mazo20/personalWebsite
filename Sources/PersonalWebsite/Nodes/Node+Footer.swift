@@ -24,13 +24,6 @@ extension Node where Context == HTML.BodyContext {
                 ),
                 .text(". Written in Swift.")
             )
-//            .div(
-//                .class("pure-u-1"),
-//                .a(
-//                    .text("RSS feed"),
-//                    .href("/feed.rss")
-//                )
-//            )
         )
     }
 }

@@ -27,7 +27,11 @@ extension Node where Context == HTML.BodyContext {
                             .li(
                                 .a(
                                     .text(section.rawValue.capitalized),
-                                    .href(site.path(for: section))
+                                    .if(section == .about,
+                                        .href("/"),
+                                        else: .href(site.path(for: section))
+                                    )
+                                    
                                 )
                             )
                         })

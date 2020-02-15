@@ -26,7 +26,7 @@ Developing a mobile app in React Native for a research team in Toronto that take
 
 Currently GPA of 3.6 with a weighted average of 82.
 
-3rd and 4th year courses:
+3rd and 4th-year courses:
 
 Scalable Computing, Parallel Programming, Machine Learning and Data Mining, Introduction to Image Understanding, Introduction to Computer Networks, Introduction to Databases
 
@@ -45,40 +45,40 @@ Currently 1.1 with a weighted average of 80.
 
 99th percentile in Extended Physics exam
 
-98th percintile in Extende Informatics exam 
+98th percentile in Extended Informatics exam 
 
 # Experience
 
-## Personal iOS apps
+## Personal iOS apps in Swift
 
-[SubTracker](https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104) - An app that connects to Youtube API to get live subscriber count that is updated every second for specified channel.
+[SubTracker](https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104) - An app that connects to Youtube API to get live subscriber count that is updated every second for the specified channel.
 
-[Sorting algorithms visualized](https://apps.apple.com/us/app/sorting-algorithms-visualised/id1454959670) -  An app that lets you visualize and compare the speed of algorithms like quicksort, heapsort, shell sort etc.
+[Sorting algorithms visualized](https://apps.apple.com/us/app/sorting-algorithms-visualised/id1454959670) -  An app that lets you visualize and compare the speed of algorithms like quicksort, heapsort, shell sort, etc.
 
-[Dots - Connect Five and Add](https://apps.apple.com/us/app/dots-connect-five-and-add/id1351455840) -  A game about connecting dots to create new ones, until no more moves are possible.
+[Dots - Connect Five and Add](https://apps.apple.com/us/app/dots-connect-five-and-add/id1351455840) -  A game about connecting dots to create new ones until no more moves are possible.
 
-<a href="https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104">
-  <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple128/v4/1e/5a/f2/1e5af2de-28c2-d598-6614-9072c9de7284/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/314x0w.jpg" alt="Previous desktop version of a blog" width="180" style="border-radius:25%; margin:10px; border: 1px solid #bfbfbf;"/>
+<a href="https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104" style="text-decoration: none;">
+<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple128/v4/1e/5a/f2/1e5af2de-28c2-d598-6614-9072c9de7284/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/314x0w.jpg" alt="Previous desktop version of a blog" style="border-radius:25%; margin:10px; border: 1px solid #bfbfbf; max-width: 25%;"/>
 </a>
-<a href="https://apps.apple.com/us/app/sorting-algorithms-visualised/id1454959670">
-<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/2b/e2/1c/2be21c23-26fc-502b-91e7-b4cd35d2838a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/314x0w.jpg" alt="Previous desktop version of a blog" width="180" style="border-radius:25%; margin:10px; border: 1px solid #bfbfbf;"/>
+<a href="https://apps.apple.com/us/app/sorting-algorithms-visualised/id1454959670" style="text-decoration: none;">
+<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/2b/e2/1c/2be21c23-26fc-502b-91e7-b4cd35d2838a/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/314x0w.jpg" alt="Previous desktop version of a blog" style="border-radius:25%; margin:10px; border: 1px solid #bfbfbf; max-width: 25%;"/>
 </a>
-<a href="https://apps.apple.com/us/app/dots-connect-five-and-add/id1351455840">
-<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/6a/25/7e/6a257eda-edbe-1a04-b983-dd7f340025a0/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/314x0w.jpg" alt="Previous desktop version of a blog" width="180" style="border-radius:25%; margin:10px; border: 1px solid #bfbfbf;"/>
+<a href="https://apps.apple.com/us/app/dots-connect-five-and-add/id1351455840" style="text-decoration: none;">
+<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/6a/25/7e/6a257eda-edbe-1a04-b983-dd7f340025a0/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/314x0w.jpg" alt="Previous desktop version of a blog"  style="border-radius:25%; margin:10px; border: 1px solid #bfbfbf; max-width: 25%;"/>
 </a>
 
 
 ## Flutter apps for Nagne Studio
 
-*KuzaKash* [[Android](https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104)] - An app that connects to Youtube API to get live subscriber count that is updated every second for specified channel.
+*KuzaKash* [[Android](https://apps.apple.com/us/app/subtracker-live-sub-count/id1156805104)] - An app for kids and parents to set financial goals and track their progress.
 
-*CallWallet* [[Android](https://play.google.com/store/apps/details?id=com.callwallet.app),  [iOS](https://apps.apple.com/jm/app/callwallet-making-crm-mobile/id1471343945)] -  An app that lets you visualize and compare the speed of algorithms like quicksort, heapsort, shell sort etc.
+*CallWallet* [[Android](https://play.google.com/store/apps/details?id=com.callwallet.app),  [iOS](https://apps.apple.com/jm/app/callwallet-making-crm-mobile/id1471343945)] -  A speech-controlled voice assistant that connects to your CRM and helps you make hands-free sales calls when you’re on the go.
 
 ## Other projects
 
 **Static website build with Swift**
 
-This website was build with Swift and generated into HTML with [Publish](https://github.com/johnsundell/publish). 100% JavaScript-free.
+This website was built with Swift and generated into HTML with [Publish](https://github.com/johnsundell/publish). 100% JavaScript-free.
 
 **r/place**
 
@@ -86,10 +86,10 @@ A copy of a famous [project](https://www.reddit.com/r/place/) on Reddit for my S
 
 **DVD cover efficient retrieval system**
 
-A Python script which takes an image of a DVD, finds key points using SIFT descriptors, retrieves similar covers from the database using the Nister, Stewenius, [*"Scalable Recognition with a Vocabulary Tree"*](http://www-inst.eecs.berkeley.edu/~cs294-6/fa06/papers/nister_stewenius_cvpr2006.pdf), CVPR 2006 paper and returns the DVD cover with the best homography calculated using RANSAC.
+A Python script which takes an image of a DVD, finds key points using SIFT descriptors, retrieves similar covers from the database using the [*Scalable Recognition with a Vocabulary Tree*](http://www-inst.eecs.berkeley.edu/~cs294-6/fa06/papers/nister_stewenius_cvpr2006.pdf) [Nister, Stewenius; CVPR 2006] paper and returns the DVD cover with the best homography calculated using RANSAC.
 
-<img src="/images/retrievedImages.png" alt="The most similar images retieved from the database" style="width: 100%; max-width: 380px;"/>
-<img src="/images/bestImage.png" alt="The image with best homography" style="width: 100%; max-width: 380px;"/>
+<img src="/images/retrievedImages.jpg" alt="The most similar images retieved from the database" style="width: 100%; max-width: 380px;"/>
+<img src="/images/bestImage.jpg" alt="The image with best homography" style="width: 100%; max-width: 380px;"/>
 
 
 **UrlShortener**
@@ -102,7 +102,7 @@ Written purely in machine code (MIPS) for Computer Systems class.
 
 **Micro-Haskell language processing pipeline**
 
-Lexer, parser and typechecker built in Java for a simplified Haskell language.
+Lexer, parser, and typechecker built in Java for a simplified Haskell language.
 
 # Other things about me
 
@@ -112,7 +112,7 @@ Lexer, parser and typechecker built in Java for a simplified Haskell language.
 
 *2018-2019*
 
-As a vice-president I was responsible for organising weekly Polish tutorials, social events and helping with the contact with the Polish Consulate in Edinburgh.
+As a vice-president, I was responsible for organising weekly Polish tutorials, social events and helping with the contact with the Polish Consulate in Edinburgh.
 
 ## Scholarships
 
@@ -120,13 +120,13 @@ As a vice-president I was responsible for organising weekly Polish tutorials, so
 
 *2019*
 
-One of a 100 Polish students chosen for a mentorship scheme. My mentor was Matt Komorowski, Senior Director & Head of Channel Partners - International Markets at PayPal.
+One of the 100 Polish students chosen for a mentorship scheme. My mentor was Matt Komorowski, Senior Director & Head of Channel Partners - International Markets at PayPal.
 
 **iOSDevUK student sponsorship**
 
 *2018*
 
-Recieved one of five sponsorships for students that allowed me to attend the biggest iOS conference in UK
+Received one of five sponsorships for students that allowed me to attend the biggest iOS conference in the UK.
 
 ## Languages
 

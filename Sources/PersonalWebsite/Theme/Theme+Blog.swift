@@ -7,6 +7,7 @@
 
 import Plot
 import Publish
+import Foundation
 
 extension Theme where Site == Blog {
     /// The default "Foundation" theme that Publish ships with, a very
@@ -48,20 +49,10 @@ struct BlogHTMLFactory: HTMLFactory {
             .body(
                 .grid(
                     .header(for: context.site),
-                    .if(section.id == .about,
-                        .div(
-                            .sidebar(for: context.site),
-                            .sidebarPage(
-                                .contentBody(section.body)
-                            )
-                        ),
-                        else:
-                        .page(
-                            .h1(.text(section.title)),
-                            .itemList(for: section.items, on: context.site)
-                        )
+                    .page(
+                        .h1(.text(section.title)),
+                        .itemList(for: section.items, on: context.site)
                     ),
-                    
                     .footer(for: context.site)
                 )
             )
@@ -79,6 +70,7 @@ struct BlogHTMLFactory: HTMLFactory {
                 .article(
                     .div(
                         .class("content"),
+                        .articleHeader(for: item),
                         .contentBody(item.body)
                     ),
                     .span("Tagged with: "),
@@ -96,7 +88,9 @@ struct BlogHTMLFactory: HTMLFactory {
             .head(for: context.site),
             .body(
                 .header(for: context.site),
-                .wrapper(.contentBody(page.body)),
+                .wrapper(
+                    .contentBody(page.body)
+                ),
                 .footer(for: context.site)
             )
         )
@@ -162,23 +156,26 @@ struct BlogHTMLFactory: HTMLFactory {
 }
 
 private extension Node where Context == HTML.BodyContext {
-
+    
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
         return .ul(
             .class("item-list"),
             .forEach(items) { item in
                 .li(.article(
-                    .h1(.a(
-                        .href(item.path),
-                        .text(item.title)
-                    )),
+                    .h1(
+                        .a(
+                            .href(item.path),
+                            .text(item.title)
+                        )
+                    ),
+                    .p(.text(DateFormatter.article.string(from: item.date))),
                     .tagList(for: item, on: site),
                     .p(.text(item.description))
                 ))
             }
         )
     }
-
+    
     static func tagList<T: Website>(for item: Item<T>, on site: T) -> Node {
         return .ul(.class("tag-list"), .forEach(item.tags) { tag in
             .li(.a(

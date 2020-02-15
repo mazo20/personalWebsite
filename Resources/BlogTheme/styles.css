@@ -8,7 +8,7 @@
 
 body {
     background: #fff;
-    color: #333;
+    color: #222;
     font-family: Helvetica, Arial;
     margin-left: auto;
     margin-right: auto;
@@ -22,16 +22,10 @@ body {
     text-align: left;
 }
 
-header {
-    padding: 15px;
-}
-
 header .header-layout {
     margin-top: 10px;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
 
@@ -50,6 +44,7 @@ header a {
 }
 
 header .header-title {
+    visibility: visible;
     margin: 5px;
     font-size: 25px;
     font-weight: bold;
@@ -59,9 +54,29 @@ header .header-title {
 
 header .header-section {
     margin: 5px;
-    font-size: 20px;
-    display: flex;
+    padding-top: 10px;
     padding-bottom: 2px;
+    font-size: 20px;
+    
+}
+
+@media(min-width: 26em) {
+    header {
+        padding: 15px;
+    }
+    
+    header .header-layout {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    header .header-section {
+        display: flex;
+        margin: 5px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+    }
 }
 
 nav {
@@ -102,9 +117,31 @@ a {
 .item-list > li {
     display: block;
     padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     border-radius: 20px;
     background-color: #eee;
     margin-bottom: 20px;
+}
+
+.article-header {
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.article-header h1 {
+    margin-bottom: 0px;
+    font-size: 2.2em;
+}
+
+.article-header i {
+/*    margin-bottom: 0px;*/
+    font-size: 0.9em;
+    background-color: #eee;
+/*    color: #555;*/
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 8px;
 }
 
 .item-list > li:last-child {
@@ -112,23 +149,30 @@ a {
 }
 
 .item-list h1 {
-    margin-bottom: 15px;
-    font-size: 1.3em;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    
+}
+
+.item-list a {
+    text-decoration: none;
 }
 
 .item-list p {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    line-height: 1.4;
 }
 
 .tag-list {
-    margin-bottom: 15px;
+    margin: 10px 0;
 }
 
 .tag-list li,
 .tag {
     display: inline-block;
     background-color: #000;
-    color: #ddd;
+    color: #fff;
     padding: 4px 6px;
     border-radius: 5px;
     margin-right: 5px;
@@ -146,6 +190,8 @@ a {
 .content {
     padding: 20px;
     text-align: left;
+    min-height: 100%;
+    line-height: 1.6;
 }
 
 .browse-all {
@@ -161,7 +207,8 @@ a {
 
 .footer {
     color: #8a8a8a;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 30px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -223,6 +270,8 @@ a {
 }
 
 
+
+
 @media(min-width: 64em) {
     .sidebar {
         padding-left: 5px;
@@ -256,4 +305,65 @@ a {
 }
 
 
+code {
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+
+pre {
+    margin-bottom: 1.5em;
+    background-color: rgba(34, 37, 41, 1);
+    padding: 16px 0;
+    border-radius: 8px;
+}
+
+pre code {
+    font-family: monospace;
+    display: block;
+    padding: 0 20px;
+    color:  rgba(215, 215, 215, 1);
+    background-color: rgba(34, 37, 41, 1);
+    line-height: 1.4em;
+    font-size: 1em;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+}
+
+pre code .keyword {
+    color: rgba(252, 95, 193, 1);
+}
+
+pre code .type {
+    color: rgba(158, 241, 221, 1);
+}
+
+pre code .call {
+    color: rgba(158, 241, 221, 1);
+}
+
+pre code .property {
+    color: #21ab9d;
+}
+
+pre code .number {
+    color: rgba(200, 184, 106, 1);
+}
+
+pre code .string {
+    color: rgba(250, 106, 102, 1);
+}
+
+pre code .comment {
+    color: #6b8a94;
+}
+
+pre code .dotAccess {
+    color: rgba(158, 241, 221, 1);
+}
+
+pre code .preprocessing {
+    color: #b68a00;
+}
 
